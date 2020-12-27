@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>AGS</title>
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+	
+		
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css">
+		<link rel="stylesheet" href="assets/plugins/iCheck/skins/all.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/styles-responsive.css">
+		<link rel="stylesheet" href="assets/plugins/iCheck/skins/all.css">
+</head>	
+		<body class="login">
+			
+<div class="">
+
+
+			<div class="" style="text-align: center;" >
+				<img src="logo.jpg" style="width:10%;margin-top:20px">
+				<p style="font-family: 'Bauhaus 93 ',cursive ">AGS</p>
+			</div>
+
+
+			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			 
+				<!-- start: LOGIN BOX -->
+				<div class="box-login " style="margin-top:-100px">
+					<h3>Connectez-vous à votre compte</h3>
+					<p>
+						Veuillez entrer votre nom d'utilisateur et votre mot de passe pour vous connecter.
+					</p>
+					<form class="form-login" action="login.php" method="post">
+						<div class="errorHandler alert alert-danger no-display">
+							<i class="fa fa-remove-sign"></i> Vous avez des erreurs de formulaire. S'il vous plaît vérifier ci-dessous.
+						</div>
+
+						<fieldset>
+							<div class="form-group">
+								<span class="input-icon">
+									<input type="text" placeholder="Nom d'utilisateur" class="form-control" name="username" id="username" >
+									<i class="fa fa-user"></i> </span>
+							</div>
+							<div class="form-group form-actions">
+								<span class="input-icon">
+									<input type="password" placeholder="Mot de passe" class="form-control password" name="password" id="password" >
+									<i class="fa fa-lock"></i>
+			                    </span>
+							</div>
+							<div class="form-actions">
+								<button type="submit" id="submit" class="btn btn-green pull-right">
+									Connecter <i class="fa fa-arrow-circle-right"></i>
+								</button>
+							</div>
+						</fieldset>
+					</form>
+
+				</div>
+				<!-- end: LOGIN BOX -->
+
+		   </div>
+		  </div>
+		  
+		<script src="assets/plugins/jQuery/jquery-2.1.1.min.js"></script>
+		<!--<![endif]-->
+		<script src="assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/iCheck/jquery.icheck.min.js"></script>
+		<script src="assets/plugins/jquery.transit/jquery.transit.js"></script>
+		<script src="assets/plugins/TouchSwipe/jquery.touchSwipe.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="assets/js/login.js"></script>
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				Login.init();
+			});
+		</script>
+	</body>
+</body>
+</html>
